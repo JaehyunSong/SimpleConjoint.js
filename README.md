@@ -2,7 +2,7 @@
 
 JavaSciprt for VERY VERY simple conjoint experiment using Qualtrics
 
-**作動は確認していますが、使い方については今度作成します。**
+**作動は確認できておりますが、使い方については今度作成します。**
 
 ---
 
