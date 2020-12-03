@@ -65,6 +65,7 @@ var KeyArray = shuffle(KeyArray);
 ### 3. Qualtricsの質問文に埋め込む
 
 1. 調査票における最初の質問文に「Add JavaSciprt」
+    * コンジョイント実験のブロックより上ならOK
 2. コード3行目の箇所にスクリプトを貼り付ける
 
 ```javascript
@@ -93,6 +94,7 @@ Qualtrics.SurveyEngine.addOnUnload(function()
 
 1. Survey Flow
 2. 最上段にEmbedded Dataブロック追加
+    * JavaScriptが埋め込まれた質問文が含まれているブロックより上ならOK
 3. `F-1-1`、`F-1-1-1`、`F-1-2`...などをすべて追加
     * ここが一番面倒くさいかも
 
@@ -100,6 +102,7 @@ Qualtrics.SurveyEngine.addOnUnload(function()
 
 1. Survey Flow
 2. 最上段にWeb Serviceブロック追加
+    * JavaScriptが埋め込まれた質問文が含まれているブロックより上ならOK
 3. URLに以下のURLを入力。`T=5&P=2&A=6&L=F`の箇所を適宜修正する
 
 ```
