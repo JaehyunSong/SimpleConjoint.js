@@ -96,9 +96,12 @@ Qualtrics.SurveyEngine.addOnUnload(function()
 2. 最上段にEmbedded Dataブロック追加
     * JavaScriptが埋め込まれた質問文が含まれているブロックより上ならOK
 3. `F-1-1`、`F-1-1-1`、`F-1-2`...などをすべて追加
+    * (タスク数 x 属性数 x プロファイル数) + (タスク数 x 属性数)個を入力する必要があります。上の例だと36個です。
     * ここが一番面倒くさいかも
 
 #### 方法2. スクリプトの利用（Web Serviceブロック利用）
+
+一瞬だけ宋のサーバーを借りて自動的にEmbedded Dataフィールドを入力します。宋のサーバーを使用するのは調査票設計の段階のみであって、実際の調査では宋のサーバーは使いません。
 
 1. Survey Flow
 2. 最上段にWeb Serviceブロック追加
@@ -106,7 +109,7 @@ Qualtrics.SurveyEngine.addOnUnload(function()
 3. URLに以下のURLを入力。`T=5&P=2&A=6&L=F`の箇所を適宜修正する
 
 ```
-http://tintstyle.cafe24.com/Qualtrics/SimpleConjoint/QualtricsSetED.php?T=5&P=2&A=6&L=F
+http://tintstyle.cafe24.com/Qualtrics/SimpleConjoint/QualtricsSetED.php?T=3&P=2&A=4&L=F
 ```
 
 * パラメーター
