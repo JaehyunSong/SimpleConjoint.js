@@ -1,12 +1,19 @@
-# SimpleConjoint.js
+# SimpleConjoint.js 0.0.0
 
 JavaSciprt for VERY VERY simple conjoint experiment using Qualtrics
+
+**作動は確認していますが、使い方については今度作成します。**
 
 ---
 
 ### Author
 
 * [Jaehyun Song](https://www.jaysong.net)
+
+---
+
+### 履歴
+* 2020年12月3日: 0.0.0
 
 ---
 
