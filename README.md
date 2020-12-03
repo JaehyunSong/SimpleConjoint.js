@@ -101,12 +101,12 @@ Qualtrics.SurveyEngine.addOnUnload(function()
 
 #### 方法2. スクリプトの利用（Web Serviceブロック利用）
 
-一瞬だけ宋のサーバーを借りて自動的にEmbedded Dataフィールドを入力します。宋のサーバーを使用するのは調査票設計の段階のみであって、実際の調査では宋のサーバーは使いません。
+結局、値を保存するフィールドさえ作れば良いわけですが、Web Serviceを使用してもフィールドの生成は可能です。中身が空のフィールドを生成し、JavaScriptを用いてそのフィールドを埋めることになります。具体的な方法としては、一瞬だけ宋のサーバーを借りて自動的にEmbedded Dataフィールドを入力します。宋のサーバーを使用するのは調査票設計の段階のみであって、実際の調査では宋のサーバーは使いません。
 
 1. Survey Flow
 2. 最上段にWeb Serviceブロック追加
     * JavaScriptが埋め込まれた質問文が含まれているブロックより上ならOK
-3. URLに以下のURLを入力。`T=5&P=2&A=6&L=F`の箇所を適宜修正する
+3. URLに以下のURLを入力。`T=3&P=2&A=4&L=F`の箇所を適宜修正する
 
 ```
 http://tintstyle.cafe24.com/Qualtrics/SimpleConjoint/QualtricsSetED.php?T=3&P=2&A=4&L=F
