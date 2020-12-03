@@ -2,6 +2,8 @@
 
 JavaSciprt for VERY VERY simple conjoint experiment using Qualtrics
 
+Qualtricsを利用した完全無作為コンジョイント実験のためのスクリプト
+
 **作動は確認できておりますが、使い方については今度作成します。**
 
 ---
