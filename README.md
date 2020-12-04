@@ -10,7 +10,10 @@ Qualtricsを利用した完全無作為コンジョイント実験のための�
 
 ### Author
 
-* [Jaehyun Song](https://www.jaysong.net)
+* [Jaehyun Song](https://www.jaysong.net) (そん じぇひょん)
+* 同志社大学文化情報学部　助教
+* https://www.jaysong.net
+* jasong@mail.doshisha.ac.jp
 
 ---
 
@@ -44,9 +47,15 @@ var Letter = "F";
 ```
 
 **属性名を入力**
+
 ```javascript
 var KeyArray = ["性別", "年齢", "学歴", "年収"];
 ```
+
+**各属性に対応する水準を入力**
+
+* `{}`内は`"属性名":["水準1", "水準2", ...]`の形式で入力してください。
+* `KeyArray`と`FeaturesArray`の属性名は一致する必要がありますが、順序が一致しなくても問題ありません。
 
 
 ```javascript
@@ -66,15 +75,14 @@ var KeyArray = shuffle(KeyArray);
 
 ### 3. Qualtricsの質問文に埋め込む
 
-1. 調査票における最初の質問文に「Add JavaSciprt」
-    * コンジョイント実験のブロックより上ならOK
-2. コード3行目の箇所にスクリプトを貼り付ける
+1. 調査票における最初の質問文左側の歯車ボタンをクリックし、「Add JavaSciprt」を選択
+    * コンジョイント実験のブロックより上ならどこでも良いですが、調査同意書などに入れておけば確実でしょう。
+2. コード3行目の箇所にスクリプトを貼り付けます。
 
 ```javascript
 Qualtrics.SurveyEngine.addOnload(function()
 {
-	/*Place your JavaScript here to run when the page loads*/
- ここにスクリプトを貼り付ける
+	/*Place your JavaScript here to run when the page loads (ここにスクリプトを貼り付ける)*/
 });
 
 Qualtrics.SurveyEngine.addOnReady(function()
@@ -96,7 +104,7 @@ Qualtrics.SurveyEngine.addOnUnload(function()
 
 1. Survey Flow
 2. 最上段にEmbedded Dataブロック追加
-    * JavaScriptが埋め込まれた質問文が含まれているブロックより上ならOK
+    * JavaScriptが埋め込まれた質問文が含まれているブロックより上ならどこでもOKをです。Survey Flow上の最上段なら安心です。
 3. `F-1-1`、`F-1-1-1`、`F-1-2`...などをすべて追加
     * (タスク数 x 属性数 x プロファイル数) + (タスク数 x 属性数)個を入力する必要があります。上の例だと36個です。
     * ここが一番面倒くさいかも
@@ -107,22 +115,23 @@ Qualtrics.SurveyEngine.addOnUnload(function()
 
 1. Survey Flow
 2. 最上段にWeb Serviceブロック追加
-    * JavaScriptが埋め込まれた質問文が含まれているブロックより上ならOK
-3. URLに以下のURLを入力。`T=3&P=2&A=4&L=F`の箇所を適宜修正する
+    * JavaScriptが埋め込まれた質問文が含まれているブロックより上ならどこでもOKをです。Survey Flow上の最上段なら安心です。
+3. URLに以下のURLを入力。`T=3&P=2&A=4&L=F`の箇所を適宜修正します。
 
 ```
 http://tintstyle.cafe24.com/Qualtrics/SimpleConjoint/QualtricsSetED.php?T=3&P=2&A=4&L=F
 ```
 
-* パラメーター
+* 4つのパラメーター（`T`、`P`、`A`、`L`）の詳細は以下の通りです。
   * `T`: タスク数
   * `P`: プロファイル数
   * `A`: 属性数
   * `L`: 変数名の先頭文字（指定しない場合、F）
 
-4. 「Test」ボタンをクリック
-5. Selectの「All」をクリックして全項目を選択し、「Add Embedded Data」をクリック
-6. URLを削除する。URLを残しても作動するが、意味もなく調査の度の宋のサーバーをいじめることになる。
+4. URL入力欄右側の「Test」ボタンをクリック
+5. ダイアログ上段Selectの「All」をクリックして全項目を選択し、「Add Embedded Data」をクリック
+6. URLを削除します。
+   * URLを残しても作動しますが、意味もなく調査の度の宋のサーバーをいじめることになります。実査の際、読み込み速度も落ちるので、URLは除去しておきましょう。
 
 ### 5. 質問文にデータフィールドを入力
 
