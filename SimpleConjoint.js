@@ -1,9 +1,11 @@
 // タスク数
-var Tasks = 1;
+var Tasks = 3;
 // プロファイル数
 var Profiles = 2;
 // 先頭文字
 var Letter = "F";
+// 属性順番のランダム化（true / false）
+var AttrRand = true;
 
 // 属性名配列
 var KeyArray = ["A", "B", "C"];
@@ -33,16 +35,17 @@ function choose_one(array) {
 };
 
 // 属性順番のランダム化
-// 順番を固定する場合、コメントアウト
-var KeyArray = shuffle(KeyArray);
+if (AttrRand == true) {
+	var KeyArray = shuffle(KeyArray);
+}
 
 for (i = 1; i <= Tasks; i++) {
 	for (j = 0; j <= KeyArray.length - 1; j++) {
-		Qualtrics.SurveyEngine.setEmbeddedData(Letter + "-" + i + "-" + (j+1), KeyArray[j]);
-		//console.log(Letter + "-" + i + "-" + (j+1) + ":" + KeyArray[j]); // デバッグ用
+		//Qualtrics.SurveyEngine.setEmbeddedData(Letter + "-" + i + "-" + (j+1), KeyArray[j]);
+		console.log(Letter + "-" + i + "-" + (j+1) + ":" + KeyArray[j]); // デバッグ用
 		for (k = 1; k <= Profiles; k++) {
-			Qualtrics.SurveyEngine.setEmbeddedData(Letter + "-" + i + "-" + k + "-" + (j+1), choose_one(FeaturesArray[KeyArray[j]]));
-			//console.log(Letter + "-" + i + "-" + (j+1) + "-" + k + ":" + choose_one(FeaturesArray[KeyArray[j]]));  // デバッグ用
+			//Qualtrics.SurveyEngine.setEmbeddedData(Letter + "-" + i + "-" + k + "-" + (j+1), choose_one(FeaturesArray[KeyArray[j]]));
+			console.log(Letter + "-" + i + "-" + (j+1) + "-" + k + ":" + choose_one(FeaturesArray[KeyArray[j]]));  // デバッグ用
 		}
 	}
 }
