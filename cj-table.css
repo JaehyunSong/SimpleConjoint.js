@@ -1,0 +1,39 @@
+.cj-table{
+	column-gap: 10px;
+	padding: 2%;
+	border-left: none;
+	border-top: none;
+	border-bottom: solid;
+	border-collapse:collapse;
+	vertical-align: top;
+	text-align: center;
+	}
+.cj-head{
+	border-bottom: 2px solid #000000 ;
+	}
+.cj-body{
+	vertical-align: top;
+	border-bottom: 1px solid #ddd;
+	}
+.cj-foot{
+	border-bottom: 2px solid #000000;
+}
+.cj-body:hover{
+	background-color: #f5f5f5;
+}
+.cj-foot:hover{
+	background-color: #f5f5f5;
+}
+.level {
+	padding-left: 5%;
+	padding-right: 2%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+.attr {
+	padding-left: 2%;
+	padding-right: 2%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	text-align: left;
+}
