@@ -285,4 +285,4 @@ QualtricsのLook&Feel > Style > Custom CSSに以下のコードを貼り付け�
 
 正しくCSSが適用されたコンジョイント実験の表は以下の通りです。
 
-![CSS適用後]()
+![CSS適用後](https://github.com/JaehyunSong/SimpleConjoint.js/raw/main/Screenshot/after_css.png)
