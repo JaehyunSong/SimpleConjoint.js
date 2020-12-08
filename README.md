@@ -194,3 +194,95 @@ for (i = 1; i <= Tasks; i++) {
 	}
 }
 ```
+
+---
+
+### 付録: cj-table.css
+
+QualtricsのLook&Feel > Style > Custom CSSに以下のコードを貼り付けてください。
+    * [Matt Graham](http://m-graham.com/)氏のCSSを改良したものです。
+
+```css
+.cj-table{
+	min-width: 700px; /*表の最小サイズ（幅）*/
+	column-gap: 10px;
+	padding: 2%;
+	border-left: none;
+	border-top: none;
+	border-bottom: solid;
+	border-collapse:collapse;
+	vertical-align: top;
+	text-align: center;
+	margin-left : auto;
+	margin-right : auto;
+	}
+.cj-head{
+	border-bottom: 2px solid #000000 ;
+	}
+.cj-body{
+	vertical-align: top;
+	border-bottom: 1px solid #ddd;
+	}
+.cj-foot{
+	border-bottom: 2px solid #000000;
+}
+.cj-body:hover{
+	background-color: #f5f5f5;
+}
+.cj-foot:hover{
+	background-color: #f5f5f5;
+}
+.level {
+	padding-left: 5%;
+	padding-right: 2%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+.attr {
+	padding-left: 2%;
+	padding-right: 2%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	text-align: left;
+}
+```
+
+質問文はHTML編集機能を利用を、以下のように入力します。
+
+```html
+<div>
+<table class="cj-table">
+ <tbody>
+  <tr class="cj-head">
+   <td></td>
+   <td class="level">候補者1</td>
+   <td class="level">候補者2</td>
+  </tr>
+  <tr class="cj-body">
+   <td class="attr">${e://Field/F-1-1}</td>
+   <td class="level">${e://Field/F-1-1-1}</td>
+   <td class="level">${e://Field/F-1-2-1}</td>
+  </tr>
+  <tr class="cj-body">
+   <td class="attr">${e://Field/F-1-2}</td>
+   <td class="level">${e://Field/F-1-1-2}</td>
+   <td class="level">${e://Field/F-1-2-2}</td>
+  </tr>
+  <tr class="cj-body">
+   <td class="attr">${e://Field/F-1-3}</td>
+   <td class="level">${e://Field/F-1-1-3}</td>
+   <td class="level">${e://Field/F-1-2-3}</td>
+  </tr>
+  <tr class="cj-foot">
+   <td class="attr">${e://Field/F-1-4}</td>
+   <td class="level">${e://Field/F-1-1-4}</td>
+   <td class="level">${e://Field/F-1-2-4}</td>
+  </tr>
+ </tbody>
+</table>
+</div>
+```
+
+正しくCSSが適用されたコンジョイント実験の表は以下の通りです。
+
+![CSS適用後]()
