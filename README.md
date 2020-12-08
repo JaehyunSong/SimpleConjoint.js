@@ -204,6 +204,10 @@ QualtricsのLook&Feel > Style > Custom CSSに以下のコードを貼り付け�
 * [Matt Graham](http://m-graham.com/)氏のCSSを改良したものです。
 
 ```css
+.cj-box{
+        overflow:auto;
+        border:none;
+}
 .cj-table{
 	min-width: 700px; /*表の最小サイズ（幅）*/
 	font-size: 16px; /*フォントサイズ*/
@@ -254,7 +258,7 @@ QualtricsのLook&Feel > Style > Custom CSSに以下のコードを貼り付け�
 質問文はHTML編集機能を利用を、以下のように入力します。
 
 ```html
-<div>
+<div class="cj-box">
 <table class="cj-table">
  <tbody>
   <tr class="cj-head">
