@@ -197,7 +197,7 @@ for (i = 1; i <= Tasks; i++) {
 
 ---
 
-### 付録: cj-table.css
+# 付録: cj-table.css
 
 QualtricsのLook&Feel > Style > Custom CSSに以下のコードを貼り付けてください。
 
