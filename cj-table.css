@@ -1,3 +1,7 @@
+.cj-box{
+        overflow:auto;
+        border:none;
+}
 .cj-table{
 	min-width: 700px; /*表の最小サイズ（幅）*/
 	font-size: 16px; /*フォントサイズ*/
