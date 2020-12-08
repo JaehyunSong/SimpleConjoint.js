@@ -200,7 +200,8 @@ for (i = 1; i <= Tasks; i++) {
 ### 付録: cj-table.css
 
 QualtricsのLook&Feel > Style > Custom CSSに以下のコードを貼り付けてください。
-    * [Matt Graham](http://m-graham.com/)氏のCSSを改良したものです。
+
+* [Matt Graham](http://m-graham.com/)氏のCSSを改良したものです。
 
 ```css
 .cj-table{
@@ -218,6 +219,7 @@ QualtricsのLook&Feel > Style > Custom CSSに以下のコードを貼り付け�
 	}
 .cj-head{
 	border-bottom: 2px solid #000000 ;
+	font-weight: 500;
 	}
 .cj-body{
 	vertical-align: top;
@@ -244,6 +246,7 @@ QualtricsのLook&Feel > Style > Custom CSSに以下のコードを貼り付け�
 	padding-top: 1%;
 	padding-bottom: 1%;
 	text-align: left;
+	font-weight: 500;
 }
 ```
 
