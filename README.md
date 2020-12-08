@@ -206,6 +206,7 @@ QualtricsのLook&Feel > Style > Custom CSSに以下のコードを貼り付け�
 ```css
 .cj-table{
 	min-width: 700px; /*表の最小サイズ（幅）*/
+	font-size: 16px; /*フォントサイズ*/
 	column-gap: 10px;
 	padding: 2%;
 	border-left: none;
