@@ -211,7 +211,7 @@ QualtricsのLook&Feel > Style > Custom CSSに以下のコードを貼り付け�
         border:none;
 }
 .cj-table{
-	min-width: 700px; /*表の最小サイズ（幅）*/
+	min-width: 500px; /*表の最小サイズ（幅）*/
 	font-size: 16px; /*フォントサイズ*/
 	column-gap: 10px;
 	padding: 2%;
@@ -223,10 +223,11 @@ QualtricsのLook&Feel > Style > Custom CSSに以下のコードを貼り付け�
 	text-align: center;
 	margin-left : auto;
 	margin-right : auto;
+	color:#000000;
 	}
 .cj-head{
 	border-bottom: 2px solid #000000 ;
-	font-weight: 500;
+	font-weight: 600;
 	}
 .cj-body{
 	vertical-align: top;
@@ -236,24 +237,27 @@ QualtricsのLook&Feel > Style > Custom CSSに以下のコードを貼り付け�
 	border-bottom: 2px solid #000000;
 }
 .cj-body:hover{
-	background-color: #f5f5f5;
+	background-color: #bfbfbf;
 }
 .cj-foot:hover{
-	background-color: #f5f5f5;
+	background-color: #bfbfbf;
 }
-.level {
+.level{
 	padding-left: 5%;
 	padding-right: 2%;
 	padding-top: 1%;
 	padding-bottom: 1%;
 }
-.attr {
+.attr{
 	padding-left: 2%;
 	padding-right: 2%;
 	padding-top: 1%;
 	padding-bottom: 1%;
 	text-align: left;
-	font-weight: 500;
+	font-weight: 600;
+}
+tr:nth-child(even){
+  background-color: #f5f5f5;
 }
 ```
 
