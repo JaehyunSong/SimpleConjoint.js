@@ -302,4 +302,6 @@ QualtricsのLook&Feel > Style > Custom CSSに以下のコードを貼り付け�
 
 正しくCSSが適用されたコンジョイント実験の表は以下の通りです。
 
+* 選択肢が水平に並んでいる場合、正しく表示されません。
+
 ![CSS適用後](https://github.com/JaehyunSong/SimpleConjoint.js/raw/main/Screenshot/screenshot_css.png)
