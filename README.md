@@ -290,7 +290,7 @@ QualtricsのLook&Feel > Style > Custom CSSに以下のコードを貼り付け�
    <td class="level">${e://Field/F-1-1-3}</td>
    <td class="level">${e://Field/F-1-2-3}</td>
   </tr>
-  <tr class="cj-foot">
+  <tr class="cj-body">
    <td class="attr">${e://Field/F-1-4}</td>
    <td class="level">${e://Field/F-1-1-4}</td>
    <td class="level">${e://Field/F-1-2-4}</td>
