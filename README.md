@@ -204,17 +204,24 @@ for (i = 1; i <= Tasks; i++) {
 QualtricsのLook&Feel > Style > Custom CSSに以下のコードを貼り付けてください。
 
 * [Matt Graham](http://m-graham.com/)氏のCSSを改良したものです。
-* 表、属性名列、水準の幅は適宜修正してください。
+* 表、属性名列、水準の幅、フォントサイズ・色は最上段の`:root{}`内で適宜修正してください。
 
 ```css
+:root{
+	--cj-min-width: 600px;    /* 表の最小サイズ (幅) */
+	--cj-font-size: 16px;     /* フォントサイズ */
+	--cj-font-color: #000000; /* フォント色 */
+	--cj-attr-width: 200px;   /* 属性列の幅 */
+	--cj-level-width: 200px;  /* 水準列の幅 */
+}
 .cj-box{
         overflow:auto;
         border:none;
 }
 .cj-table{
-	min-width: 600px; /*表の最小サイズ（幅）*/
-	font-size: 16px;  /*フォントサイズ*/
-	color:#000000;    /*フォント色*/
+	min-width: var(--cj-min-width);
+	font-size: var(--cj-font-size);
+	color: var(--cj-font-color);
 	table-layout: fixed;
 	column-gap: 10px;
 	padding: 2%;
@@ -247,14 +254,14 @@ QualtricsのLook&Feel > Style > Custom CSSに以下のコードを貼り付け�
 	background-color: #bfbfbf;
 }
 .level{
-	width: 200px; /*水準列の幅*/
+	width: var(--cj-level-width);
 	padding-left: 5%;
 	padding-right: 2%;
 	padding-top: 1%;
 	padding-bottom: 1%;
 }
 .attr{
-	width: 200px; /*属性名列の幅*/
+	width: var(--cj-attr-width);
 	padding-left: 2%;
 	padding-right: 2%;
 	padding-top: 1%;
