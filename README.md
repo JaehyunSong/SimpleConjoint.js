@@ -1,4 +1,4 @@
-# SimpleConjoint.js 0.0.1
+# SimpleConjoint.js 0.0.2
 
 JavaSciprt for VERY VERY simple conjoint experiment using Qualtrics
 
@@ -19,6 +19,7 @@ Qualtricsを利用した完全無作為コンジョイント実験のための�
 
 ### 履歴
 
+* 2021年1月2日: `cj-table.css`修正
 * 2020年12月8日: `cj-table.css`を追加
 * 2020年12月3日: 0.0.1
 
@@ -309,6 +310,6 @@ QualtricsのLook&Feel > Style > Custom CSSに以下のコードを貼り付け�
 
 正しくCSSが適用されたコンジョイント実験の表は以下の通りです。
 
-* 選択肢が水平に並んでいる場合、正しく表示されません。
+* **選択肢が水平に並んでいる場合、正しく表示されません。**
 
 ![CSS適用後](https://github.com/JaehyunSong/SimpleConjoint.js/raw/main/Screenshot/screenshot_css.png)
