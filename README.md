@@ -11,9 +11,9 @@ Qualtricsを利用した完全無作為コンジョイント実験のための�
 ### Author
 
 * [Jaehyun Song](https://www.jaysong.net) (そん じぇひょん)
-* 同志社大学文化情報学部　助教
+* 関西大学総合情報学部 准教授
 * https://www.jaysong.net
-* jasong@mail.doshisha.ac.jp
+* song@kansai-u.ac.jp
 
 ---
 
