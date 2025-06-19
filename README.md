@@ -313,3 +313,25 @@ QualtricsのLook&Feel > Style > Custom CSSに以下のコードを貼り付け�
 * **選択肢が水平に並んでいる場合、正しく表示されません。**
 
 ![CSS適用後](https://github.com/JaehyunSong/SimpleConjoint.js/raw/main/Screenshot/screenshot_css.png)
+
+---
+
+# 属性をブロック内でランダム化
+
+以下の箇所を修正
+
+```js
+if (AttrRand == true) {
+    var KeyArray = shuffle(KeyArray);
+}
+```
+
+たとえば、最初の2つは固定し、3〜5番目の属性の表示順番をランダム化する場合、以下のように修正する
+
+```js
+if (AttrRand === true) {
+   let fixed = KeyArray.slice(0, 2);
+   let group = shuffle(KeyArray.slice(2, 5));
+   KeyArray  = fixed.concat(group);
+}
+```
